@@ -1,0 +1,35 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>学生录入</title>
+</head>
+<body>
+  <h1>学生信息录入</h1>
+  <form th:action="@{/students}" th:object="${student}" method="post">
+    <div>
+      <label>姓名: <input type="text" th:field="*{name}" required></label>
+    </div>
+    <div>
+      <label>年龄: <input type="number" th:field="*{age}" min="0"></label>
+    </div>
+    <div>
+      <label>性别:
+        <select th:field="*{gender}">
+          <option value="">请选择</option>
+          <option value="Male">男</option>
+          <option value="Female">女</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label>邮箱: <input type="email" th:field="*{email}"></label>
+    </div>
+    <div>
+      <button type="submit">提交</button>
+    </div>
+  </form>
+
+  <p><a th:href="@{/students}">查看学生列表</a></p>
+</body>
+</html>
