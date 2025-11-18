@@ -32,7 +32,7 @@ public class RunController {
     // 处理表单提交（POST），使用表单字段自动绑定到 Student
     @PostMapping("/students")
     public String submitForm(@ModelAttribute Student student) {
-        studentService.save(student);
+        studentService.addStudent(student);
         return "redirect:/students"; // 提交后重定向到列表页（PRG 模式）
     }
 

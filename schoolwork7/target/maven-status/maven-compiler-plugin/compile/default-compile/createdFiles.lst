@@ -2,3 +2,6 @@ cn/edu/hzcu/yrx/demo/service/StudentService.class
 cn/edu/hzcu/yrx/demo/model/Student.class
 cn/edu/hzcu/yrx/demo/Schoolwork7Application.class
 cn/edu/hzcu/yrx/demo/model/RunController.class
+cn/edu/hzcu/yrx/demo/exception/StudentNotFoundException.class
+cn/edu/hzcu/yrx/demo/exception/InvalidStudentDataException.class
+cn/edu/hzcu/yrx/demo/aspect/LoggingAspect.class
